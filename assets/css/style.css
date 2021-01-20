@@ -28,6 +28,7 @@ html {
     text-transform: uppercase;justify-items: center;
     color: #9e9e9e;
     position: relative;
+    font-weight: 400;
 }
 
 .header__navbar-item {
@@ -38,6 +39,10 @@ html {
 .header__navbar-link:hover {
     color: var(--primary-color);
     cursor: pointer;
+}
+
+.header__navbar-item:hover .pop-up {
+    display: block;
 }
 /* pop up */
 
@@ -53,7 +58,10 @@ html {
     border-radius: 2px;
     box-shadow: 0 0 1px #ccc;
     cursor: pointer;
+    display: none;
+    animation: fadeIn linear 0.2s;
 }
+
 
 .pop-up::before {
     left: 50%;
@@ -174,4 +182,73 @@ html {
 
 .pop-up__app-img {
     height: 40px;
+}
+
+/* popup help */
+
+.pop-up__help {
+    background-color: var(--white-color);
+    position: absolute;
+    width: 234px;
+    border: 1px solid #bfbfbf;
+    top: calc(100% + 12px);
+    padding: 20px 20px 20px;
+    position: absolute;
+    right: -50%;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #ccc;
+    cursor: pointer;
+    transform: translateX(-32%);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.pop-up__help::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-left-style: solid;
+    border-top-style: solid;
+    top: -6px;
+    content: '';
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-color: #bfbfbf;
+}
+
+.header__navbar-item:hover .pop-up__help {
+    display: block;
+}
+
+.pop-up__help-list{
+    padding: 0;
+}
+
+.pop-up__help-item{
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.pop-up__help-icon{
+    padding-right: 14px;
+}
+
+.pop-up__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    color: #6e686e;
+}
+
+.pop-up__help-link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
 }

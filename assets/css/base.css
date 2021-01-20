@@ -2,3 +2,12 @@
     --primary-color : #f36d00;
     --white-color :#fff;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
