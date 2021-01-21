@@ -279,11 +279,11 @@ html {
 
 .header-search {
     height: 90px;
-    margin: 20px 0;
+    margin: 20px 0 -22px 0;
 }
 
 .header-search__logo-img {
-    width: 127px;
+    width: 145px;
     margin-right: 35px;
 }
 
@@ -292,6 +292,7 @@ html {
     display: flex;
     align-items: center;
     height: var(--header-search-wrap);
+    left: 0;
 }
 
 .header-search-bar {
@@ -316,7 +317,7 @@ html {
     outline: none;
     border: none;
     border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     background-color: var(--primary-color);
 }
 
@@ -327,7 +328,7 @@ html {
 
 .header-search__cart {
     font-size: 3rem;
-    margin-right: 20px;
+    margin-right: auto;
 }
 
 .header-search__cart-link {
@@ -336,9 +337,86 @@ html {
 
 .header-search__cart-gift {
     display: inline-flex;
+    flex: none;
 }
 
 .header-search__cart-img {
     height: 46px;
     object-fit: contain;
+    padding-right: 12px;
+}
+
+/* Category */
+
+.category {
+    background-color: rgb(103, 210, 254);
+    height: 344px;
+}
+
+.category-bar {
+    display: block;
+    background-color: var(--white-color);
+    padding: 0;
+    width: 200px;
+}
+
+.category-wrap {
+    display: flex;
+    height: 344px;
+}
+
+.category-slide-img {
+    height: 344px;
+}
+
+.category-slide {
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+.category-bar__list {
+    padding: 0;
+}
+.category-bar__item {
+    list-style: none;
+    line-height: 27px;
+    color: #757575;
+    padding-left: 8px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.category-bar__item:hover {
+    background-color: #ECEFF1;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* dot */
+
+.category-slide__list {
+    display: flex;
+}
+.dot {
+    position: absolute;
+    /* display: none; */
+    min-width: 120px;
+    top: 90%;
+    left: 30%;
+}
+
+.category-slide__item {
+    width: 10px;
+    height: 10px;
+    list-style: none;
+    background-color:#e3e7e9;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.category-slide__item:hover {
+    background-color: var(--white-color);
 }
