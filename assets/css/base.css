@@ -1,6 +1,8 @@
 :root {
     --primary-color : #f36d00;
     --white-color :#fff;
+    --header-search-height: 90px;
+    --header-search-wrap : 46px;
 }
 
 @keyframes fadeIn {
