@@ -420,3 +420,17 @@ html {
 .category-slide__item:hover {
     background-color: var(--white-color);
 }
+
+/* active category */
+
+.category-bar__item--active {
+    font-size: 1.4rem;
+    line-height: 27px;
+    float: right;
+    padding-right: 4px;
+    display: none;
+}
+
+.category-bar__item:hover .category-bar__item--active {
+    display: inline-block;
+}
