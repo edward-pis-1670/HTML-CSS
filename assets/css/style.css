@@ -581,7 +581,7 @@ html {
 }
 /* popular search */
 
-.popular-search {
+.page {
     background-color: #F5F5F5;
     height: 260px;
 }
@@ -592,7 +592,7 @@ html {
 }
 
 
-.popular-search__heading {
+.page__heading {
     font-size: 2rem;
     font-weight: 400;
     color: #424242;
@@ -666,19 +666,8 @@ html {
 
 /* collection */
 
-
 .collection {
-    background-color: #F5F5F5;
-    height: 500px;
-}
-
-
-.collection__heading {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #424242;
-    padding: 30px 0 15px 0;
-    margin: 0;
+    height: 360px;
 }
 
 .collection-product__img {
@@ -734,3 +723,73 @@ html {
 .row .border:nth-child(3) {
     border-right: 1px solid #ccc;
 }
+
+
+/* Laz mall */
+
+.lazmall {
+    height: 600px;
+}
+
+.lazmall__product {
+    width: 100%;
+}
+.lazmall__product-img {
+    width: 100%;
+    
+}
+
+.lazmall_brand {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 152px;
+    border: 1px solid #ccc;
+}
+
+
+.lazmall__brand-img {
+    width: 44px;
+    height: 44px;
+}
+
+.lazmall__link {
+    background-color: var(--white-color);
+    display: block;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    height: 270px;
+}
+.lazmall__link:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+
+.lazmall_store {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 10px;
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+    color: #000;
+
+}
+
+.lazmall_slogan {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9e9e9e;
+}
+
+.lazmall_overlay {
+    width: 100%;
+    height: 36px;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%);
+    opacity: 0.25;
+    top: 150px;
+}
+

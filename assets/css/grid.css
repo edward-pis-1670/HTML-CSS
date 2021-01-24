@@ -292,6 +292,10 @@
         margin-left: -2px;
         margin-right: -2px;
     }
+    .row.sm-gutter-1 {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
 
     .col {
         padding-left: 12px;
@@ -303,6 +307,10 @@
         padding-left: 2px;
         padding-right: 2px;
     }
+    .row.sm-gutter-1 .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
 
     .l-0 {
         display: none;
@@ -311,6 +319,7 @@
     .l-1,
     .l-2,
     .l-2-4,
+    .l-1-5,
     .l-3,
     .l-4,
     .l-5,
@@ -337,6 +346,11 @@
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
+    }
+
+    .l-1-5 {
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
     }
 
     .l-3 {
