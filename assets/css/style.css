@@ -728,7 +728,7 @@ html {
 /* Laz mall */
 
 .lazmall {
-    height: 600px;
+    height: 340px;
 }
 
 .lazmall__product {
@@ -793,3 +793,63 @@ html {
     top: 150px;
 }
 
+/* Merchandise */
+
+.merchandise {
+    height: 500px;
+}
+
+.merchandise__link {
+    background-color: var(--white-color);
+    width: 100%;
+    display: block;
+    height: 148px;
+    text-decoration: none;
+}
+
+.merchandise__image-img {
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+}
+
+.merchandise__title {
+    font-size: 1.4rem;
+    padding-top: 20px;
+    text-align: center;
+    color: #000;
+    padding-bottom: 16px;
+}
+
+.row .border_bt:nth-child(1),
+.row .border_bt:nth-child(2),
+.row .border_bt:nth-child(3),
+.row .border_bt:nth-child(4),
+.row .border_bt:nth-child(5),
+.row .border_bt:nth-child(6),
+.row .border_bt:nth-child(7) {
+    border: 1px solid #ccc;
+    border-top:none ;
+    border-left: none;
+}
+.row .border_bt:nth-child(8) {
+    border-bottom: 1px solid #ccc;
+}
+
+.row .border_t:nth-child(1),
+.row .border_t:nth-child(2),
+.row .border_t:nth-child(3),
+.row .border_t:nth-child(4),
+.row .border_t:nth-child(5),
+.row .border_t:nth-child(6),
+.row .border_t:nth-child(7),
+.row .border_t:nth-child(8) {
+    border-right: 1px solid #ccc;
+}
+
+.merchandise__link:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
