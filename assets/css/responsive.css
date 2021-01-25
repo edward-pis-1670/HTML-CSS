@@ -1,0 +1,95 @@
+/* Mobile and tablet */
+
+@media (max-width: 1039px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .header-search__cart {
+        padding-left: 35px;
+    }
+    .app {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-search-bar__input {
+        width: 315px;
+    }
+    .header-search {
+        height: 68px;
+    }
+
+    .deal-item {
+        margin-top: 20px;
+    }
+
+    .deal-card {
+        margin-bottom: 0;
+    }
+
+    .deal {
+        height: 775px;
+    }
+
+    .lazmall {
+        height: 600px;
+    }
+
+    .merchandise {
+        height: 655px;
+    }
+
+    .user {
+        height: 1500px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .header-search-bar__input {
+        width: 340px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-search-bar {
+        margin: auto;
+    }
+    .header-search {
+        margin: 20px 0 -44px 0;
+    }
+
+    .deal-item {
+        margin-left: 46px;
+        margin-top: 15px;
+    }
+
+    .deal-flash__time:first-child {
+        margin-left: 40px;
+    }
+    .deal-card {
+        margin-bottom: 10px;
+    }
+
+    .deal {
+        height: 806px;
+    }
+
+    .deal-heading {
+        padding-left: 20px;
+    }
+
+    .page__heading {
+        margin-left: 15px;
+    }
+
+    .lazmall {
+        height: 600px;
+    }
+}

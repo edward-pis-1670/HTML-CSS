@@ -463,7 +463,7 @@ html {
 .deal-heading {
     font-size: 2rem;
     font-weight: 400;
-    color: #424242;
+    color: #aeabab;
     margin: 15px 0;
 }
 
@@ -534,7 +534,7 @@ html {
 
 
 .deal-item_img {
-    width: 176px;
+    width: 100%;
     margin-top: 10px;
     justify-content: center;
     border: 2px solid #ccc;
@@ -971,6 +971,10 @@ html {
 
 /* footer */
 
+.footer {
+    height: 370px;
+}
+
 .footer__img {
     height: 97px;
 }
@@ -1003,4 +1007,56 @@ html {
 .footer__contact-item:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* footer apps */
+
+.footer__apps {
+    height: 42px;
+    display: flex;
+}
+
+.footer__app-laz-info {
+    padding: 0 15px;
+}
+
+.footer__app-laz-add {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 18px;
+    padding-bottom: 6px;
+    color: var(--primary-color);
+
+
+}
+
+.footer__app-laz-dowload {
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 18px;
+    color: #0f136d;
+}
+
+.footer__app-laz-aplication-app {
+    display: block;
+
+}
+
+.footer__app-laz-aplication-appstore,
+.footer__app-laz-aplication-google-play {
+    height: 42px;
+    padding-left: 10px;
+}
+
+.footer__app-laz-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer__desc */
+
+.footer__desc {
+    font-size: 1.2rem;
+    color: #0f136d;
+    margin-top: 20px;
 }

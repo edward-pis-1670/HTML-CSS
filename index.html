@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lazada</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 <body>
     <div class="app">
-        <div class="header">
+        <div class="header hide-on-mobile-tablet">
             <div class="grid wide">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
@@ -51,7 +52,7 @@
                                         <i class="pop-up__contact-btn__icon ti-angle-right"></i>
                                     </button>
                                 </div>
-                                <div class="pop-up__apps">
+                                <div class="pop-up__apps">header-search__cart-gift
                                     <a href="" class="pop-up__app-link">
                                         <img src="/assets/img/app_store.jpeg" alt="App_store" class="pop-up__app-img">
                                     </a>
@@ -121,7 +122,7 @@
             <div class="grid wide">
                 <div class="header-search">
                     <div class="header-search__wrap">
-                        <div class="header-search__logo">
+                        <div class="header-search__logo hide-on-mobile">
                             <a href="#" class="header-search__logo-link">
                                 <img src="/assets/img/lazada_logo.png" alt="Lazada_logo" class="header-search__logo-img">
                             </a>
@@ -134,19 +135,19 @@
                                 </span>
                             </button>
                         </div>
-                        <div class="header-search__cart">
+                        <div class="header-search__cart hide-on-mobile">
                             <a href="" class="header-search__cart-link">
                                 <i class="ti-shopping-cart"></i>
                             </a>
                         </div>
-                        <div class="header-search__cart-gift">
+                        <div class="header-search__cart-gift hide-on-mobile-tablet">
                             <img src="/assets/img/gift.jpg" alt="" class="header-search__cart-img">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="category">
+        <div class="category hide-on-mobile-tablet">
             <div class="grid wide">
                 <div class="category-wrap">
                     <div class="category-bar">
@@ -303,28 +304,28 @@
         <div class="deal">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3">
+                    <div class="col l-3 m-3">
                         <div class="deal-item">
                             <img src="/assets/img/lazada_mall.png" alt="" class="deal-item__img">
-                            <a href="" class="deal-item__link">Laz Mall</a>
+                            <a href="" class="deal-item__link hide-on-mobile">Laz Mall</a>
                         </div>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-3">
                         <div class="deal-item">
                             <img src="/assets/img/lazada_sale.png" alt="" class="deal-item__img">
-                            <a href="" class="deal-item__link">Laz Mall</a>
+                            <a href="" class="deal-item__link hide-on-mobile">Laz Mall</a>
                         </div>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-3">
                         <div class="deal-item">
                             <img src="/assets/img/lazada_voucher.png" alt="" class="deal-item__img">
-                            <a href="" class="deal-item__link">Laz Mall</a>
+                            <a href="" class="deal-item__link hide-on-mobile">Laz Mall</a>
                         </div>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-3">
                         <div class="deal-item">
                             <img src="/assets/img/lazada_global.png" alt="" class="deal-item__img">
-                            <a href="" class="deal-item__link">Laz Mall</a>
+                            <a href="" class="deal-item__link hide-on-mobile">Laz Mall</a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +333,7 @@
 
                 <!-- deal flash -->
                 <div class="deal-flash">
-                    <span class="deal-flash__status">Đang bán</span>
+                    <span class="deal-flash__status hide-on-mobile">Đang bán</span>
                     <p class="deal-flash__date">
                         Kết thúc trong
                         <span class="deal-flash__time">09</span>
@@ -341,10 +342,10 @@
                         :
                         <span class="deal-flash__time">33</span>
                     </p>
-                    <span class="deal-flash__all-product">Mua sắm toàn bộ sản phẩm</span>
+                    <span class="deal-flash__all-product hide-on-mobile">Mua sắm toàn bộ sản phẩm</span>
                 </div>
                 <div class="row deal-product">
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6">
                         <img src="/assets/img/deal_product_1.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -353,7 +354,7 @@
                             <span class="deal-item__sale-percent">-99%</span>
                         </div>
                     </div>
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6">
                         <img src="/assets/img/deal_product_2.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -362,7 +363,7 @@
                             <span class="deal-item__sale-percent">-99%</span>
                         </div>
                     </div>
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6">
                         <img src="/assets/img/deal_product_3.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -371,7 +372,7 @@
                             <span class="deal-item__sale-percent">-99%</span>
                         </div>
                     </div>
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6">
                         <img src="/assets/img/deal_product_4.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -380,7 +381,7 @@
                             <span class="deal-item__sale-percent">-99%</span>
                         </div>
                     </div>
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6 hide-on-mobile">
                         <img src="/assets/img/deal_product_5.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -389,7 +390,7 @@
                             <span class="deal-item__sale-percent">-99%</span>
                         </div>
                     </div>
-                    <div class="col l-2 deal-card">
+                    <div class="col l-2 deal-card m-4 c-6 hide-on-mobile">
                         <img src="/assets/img/deal_product_6.webp" alt="" class="deal-item_img">
                         <div class="deal-item__title">[Game 1K kì diệu - Tham gia bằng ví ZaloPay]</div>
                         <div class="deal-item__price">150.000 đ</div>
@@ -402,7 +403,7 @@
             </div>
         </div>
         <!-- popular search -->
-        <div class="page">
+        <div class="page hide-on-mobile-tablet">
             <div class="grid wide">
                 <p class="page__heading">Tìm kiếm phổ biến</p>
                 <div class="row sm-gutter">
@@ -503,7 +504,7 @@
             </div>
         </div>
         <!-- collection -->
-        <div class="page collection">
+        <div class="page hide-on-mobile-tablet collection">
             <div class="grid wide">
                 <p class="page__heading">Bộ Sưu Tập</p>
                 <div class="row no-gutters">
@@ -669,7 +670,7 @@
             <div class="grid wide">
                 <p class="page__heading">Laz Mall</p>
                 <div class="row  sm-gutter-1">
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -682,7 +683,7 @@
                             <p class="lazmall_slogan">Top Chất Lượng</p>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -695,7 +696,7 @@
                             <p class="lazmall_slogan">Top Chất Lượng</p>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -708,7 +709,7 @@
                             <p class="lazmall_slogan">Top Chất Lượng</p>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -721,7 +722,7 @@
                             <p class="lazmall_slogan">Top Chất Lượng</p>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6 hide-on-mobile">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -734,7 +735,7 @@
                             <p class="lazmall_slogan">Top Chất Lượng</p>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6 hide-on-mobile">
                         <a href="" class="lazmall__link">
                             <div class="lazmall_overlay"></div>
                             <div class="lazmall__product">
@@ -755,7 +756,7 @@
             <div class="grid wide">
                 <p class="page__heading">Danh Mục Ngành Hàng</p>
                 <div class="row no-gutters">
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -763,7 +764,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -771,7 +772,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -779,7 +780,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -787,7 +788,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -795,7 +796,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 c-4 border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -803,7 +804,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 hide-on-mobile border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -811,7 +812,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_bt">
+                    <div class="col l-1-5 m-3 hide-on-mobile border_bt">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -820,8 +821,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col l-1-5 border_t">
+                <div class="row no-gutters hide-on-mobile">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -829,7 +830,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -837,7 +838,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -845,7 +846,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -853,7 +854,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -861,7 +862,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -869,7 +870,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -877,7 +878,7 @@
                             <div class="merchandise__title">Điện Thoại Di Động</div>
                         </a>
                     </div>
-                    <div class="col l-1-5 border_t">
+                    <div class="col l-1-5 m-3 border_t">
                         <a href="" class="merchandise__link">
                             <div class="merchandise__image">
                                 <img src="/assets/img/merchandise_1.webp" class="merchandise__image-img" alt="">
@@ -892,7 +893,7 @@
             <div class="grid wide">
                 <p class="page__heading">Dành Riêng Cho Bạn</p>
                 <div class="row sm-gutter-1">
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -918,7 +919,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -944,7 +945,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -970,7 +971,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 c-6">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -996,7 +997,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 hide-on-mobile">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1022,7 +1023,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 hide-on-mobile">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1049,8 +1050,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="row sm-gutter-1">
-                    <div class="col l-2">
+                <div class="row sm-gutter-1 hide-on-mobile">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1076,7 +1077,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1102,7 +1103,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1128,7 +1129,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1154,7 +1155,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1180,7 +1181,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4">
                         <a href="" class="user__item">
                             <img src="/assets/img/user_1.webp" alt="" class="user__item-img">
                             <div class="user__item-desc">
@@ -1218,7 +1219,7 @@
         <!-- footer -->
         <div class="page footer">
             <div class="grid wide">
-                <div class="row card">
+                <div class="row card hide-on-mobile-tablet">
                     <div class="col l-4">
                         <img src="/assets/img/footer_1.png" alt="" class="footer__img">
                     </div>
@@ -1292,8 +1293,30 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-6">
-
+                    <div class="col l-6 hide-on-mobile">
+                        <div class="footer__apps">
+                            <div class="footer__app-laz-logo">
+                                <img src="/assets/img/laz_logo.png" alt="" class="footer__app-laz-logo-img">
+                            </div>
+                            <div class="footer__app-laz-info">
+                                <p class="footer__app-laz-add">Go where your heart beats</p>
+                                <p class="footer__app-laz-dowload">Tải App Lazada</p>
+                            </div>
+                            <div class="footer__app-laz-apps">
+                                <a href="" class="footer__app-laz-aplication-app">
+                                    <img src="/assets/img/app_store.jpeg" alt="" class="footer__app-laz-aplication-appstore">
+                                </a>
+                                <a href="" class="footer__app-laz-aplication-app">
+                                    <img src="/assets/img/google_play.png" alt="" class="footer__app-laz-aplication-google-play">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__desc">
+                            <div class="footer__desc-title-1">CÔNG TY TNHH RECESS</div>
+                            <div class="footer__desc-title-1">Giấy CNĐKDN: 0308808576 – Ngày cấp: 06/5/2009, được sửa đổi lần thứ 19 ngày 15/8/2019</div>
+                            <div class="footer__desc-title-1">Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP.HCM</div>
+                            <div class="footer__desc-title-1">Địa chỉ đăng ký kinh doanh: Tầng 19, Tòa nhà Saigon Centre – Tháp 2, 67 Lê Lợi, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam.</div>
+                        </div>
                     </div>
                 </div>
             </div>
