@@ -11,7 +11,20 @@ html {
     box-sizing: border-box;
 }
 .header {
-    background: rgba(0,0,0,.03);
+    background: #F7F7F7;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.header-find {
+    position: fixed;
+    top: var(--header-height);
+    z-index: 20;
+    background-color: var(--white-color);
+    right: 0;
+    left: 0;
 }
 
 .header__navbar-list {
@@ -279,7 +292,7 @@ html {
 
 .header-search {
     height: 90px;
-    margin: 20px 0 -22px 0;
+    padding-top: 20px;
 }
 
 .header-search__logo-img {
@@ -351,6 +364,10 @@ html {
 .category {
     background-color: rgb(103, 210, 254);
     height: 344px;
+    display: block;
+    position: relative;
+    top: 115px;
+    margin-bottom: 115px;
 }
 
 .category-bar {

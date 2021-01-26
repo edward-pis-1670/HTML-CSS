@@ -3,6 +3,7 @@
     --white-color :#fff;
     --header-search-height: 90px;
     --header-search-wrap : 46px;
+    --header-height: 26px;
 }
 
 @keyframes fadeIn {
