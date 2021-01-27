@@ -4,6 +4,11 @@
 /* .app {
     background: rgba(0,0,0,.03);
 } */
+
+.app {
+    overflow: hidden;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -366,8 +371,8 @@ html {
     height: 344px;
     display: block;
     position: relative;
-    top: 115px;
-    margin-bottom: 115px;
+    top: 0;
+    margin-bottom: 0;
 }
 
 .category-bar {
@@ -473,7 +478,7 @@ html {
 
 .deal {
     background-color: #CD0010;
-    margin-top: 20px;
+    margin-top: 0;
     height: 550px;
 }
 
@@ -600,7 +605,6 @@ html {
 
 .page {
     background-color: #F5F5F5;
-    height: 260px;
 }
 
 .popular-search__product {
@@ -684,7 +688,6 @@ html {
 /* collection */
 
 .collection {
-    height: 360px;
 }
 
 .collection-product__img {
@@ -746,7 +749,6 @@ html {
 /* Laz mall */
 
 .lazmall {
-    height: 340px;
 }
 
 .lazmall__product {
@@ -814,7 +816,6 @@ html {
 /* Merchandise */
 
 .merchandise {
-    height: 360px;
 }
 
 .merchandise__link {
@@ -876,7 +877,6 @@ html {
 /* User */
 
 .user {
-    height: 800px;
 }
 
 .user__item {
@@ -964,7 +964,7 @@ html {
 /* pagination */
 
 .pagination {
-    height: 80px;
+    padding: 20px 0;
 }
 
 .pagin-more {
@@ -989,7 +989,6 @@ html {
 /* footer */
 
 .footer {
-    height: 370px;
 }
 
 .footer__img {

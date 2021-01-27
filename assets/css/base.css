@@ -6,6 +6,10 @@
     --header-height: 26px;
 }
 
+body {
+    margin-top: 115px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
