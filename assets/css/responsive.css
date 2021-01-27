@@ -9,6 +9,10 @@
 /* Tablet */
 
 @media (min-width: 740px) and (max-width: 1024px) {
+
+    body {
+        margin-top: 78px;
+    }
     .header-search__cart {
         padding-left: 35px;
     }
@@ -30,27 +34,30 @@
     .deal-card {
         margin-bottom: 0;
     }
-
     .deal {
-        height: 775px;
+        padding-bottom: 20px;
     }
 
-    .lazmall {
-        height: 600px;
+    .user__item {
+        margin-bottom: 16px;
     }
-
-    .merchandise {
-        height: 655px;
+    .lazmall__link  {
+        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
-
-    .user {
-        height: 1500px;
+    .header-find {
+        top: 0 ;
+        padding-bottom: 10px;
     }
 }
 
 
 /* Mobile */
 @media (max-width: 739px) {
+
+    body {
+        margin-top: 65px;
+    }
     .header-search-bar__input {
         width: 340px;
     }
@@ -62,11 +69,13 @@
         margin: auto;
     }
     .header-search {
-        margin: 20px 0 -44px 0;
+        margin:10px 0 0 0px;
+        padding-top: 0;
+        height: unset;
     }
 
     .deal-item {
-        margin-left: 46px;
+        margin-left: 42px;
         margin-top: 15px;
     }
 
@@ -78,18 +87,50 @@
     }
 
     .deal {
-        height: 806px;
+        margin-bottom: 0;
+        height: unset;
+        padding: 0 10px 10px 10px;
+        background-color: #c2384b;
     }
 
     .deal-heading {
-        padding-left: 20px;
     }
 
     .page__heading {
         margin-left: 15px;
     }
 
-    .lazmall {
-        height: 600px;
+    .lazmall__link {
+        margin-bottom: 10px;
+    }
+    .header-find {
+        top: 0;
+        height: 65px;
+        border-bottom: 1px solid #fe4960;
+    }
+    .header-search-bar__input {
+        border: 1px solid #F93881;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .header-search-bar__btn {
+        border: 1px solid #F93881;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #fe4960;
+    }
+    .user__item-img {
+        width: 193px;
+    }
+
+    .page {
+        padding: 0 10px;
+    }
+
+    .page__heading {
+        margin-left: 0;
+    }
+    .nav-bar-on-mobile {
+        display: block;
     }
 }
